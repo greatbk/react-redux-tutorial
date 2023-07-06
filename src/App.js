@@ -1,7 +1,7 @@
-import Todos from "./components/Todos";
 import { Provider } from "react-redux";
 import CounterContainer from "./containers/CounterContainer";
 import { useStore } from "./store/useStore";
+import TodosContainer from "./containers/TodosContainer";
 
 function App() {
   const store = useStore();
@@ -10,7 +10,7 @@ function App() {
       <div>
         <CounterContainer number={0} />
         <hr />
-        <Todos />
+        <TodosContainer />
       </div>
     </Provider>
   );
